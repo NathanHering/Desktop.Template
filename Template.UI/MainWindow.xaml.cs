@@ -16,5 +16,26 @@ namespace Template.UI
             await webView.EnsureCoreWebView2Async(null);
             webView.CoreWebView2.Navigate("http://localhost:5000/index.html");
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+        }
+
+        private void ForwardButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (webView.CanGoForward)
+            {
+                webView.GoForward();
+            }
+        }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            webView.Reload();
+        }
     }
 }
