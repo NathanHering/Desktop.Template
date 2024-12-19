@@ -1,8 +1,7 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
-using System.IO;
+
+string root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+Console.WriteLine($"Serving static files from {root}");
 
 var builder = new WebHostBuilder()
     .UseKestrel()
@@ -13,11 +12,10 @@ var builder = new WebHostBuilder()
     })
     .Configure(app =>
     {
-        // Configure static file hosting
+        // Configure static file 
         app.UseStaticFiles(new StaticFileOptions
         {
-            FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
+            FileProvider = new PhysicalFileProvider(root),
             RequestPath = ""
         });
     });
