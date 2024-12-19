@@ -1,7 +1,7 @@
 ﻿using Microsoft.Web.WebView2.Core;
 using System.Windows;
 
-namespace Template.Middle
+namespace Template.WindowControl
 {
     public partial class MainWindow : Window
     {

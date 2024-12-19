@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Template.Middle
+namespace Template.WindowControl
 {
     /// <summary>
     /// Interaction logic for App.xaml

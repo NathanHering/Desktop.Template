@@ -1,8 +1,8 @@
-﻿<Window x:Class="Template.Middle.MainWindow"
+﻿<Window x:Class="Template.WindowControl.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-        xmlns:local="clr-namespace:Template.Middle"
+        xmlns:local="clr-namespace:Template.WindowControl"
         Title="Template" Height="450" Width="800"
         WindowStyle="None" AllowsTransparency="True">
     <WindowChrome.WindowChrome>
