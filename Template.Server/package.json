@@ -1,5 +1,5 @@
 {
-  "name": "template.FileServer",
+  "name": "template.Server",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
